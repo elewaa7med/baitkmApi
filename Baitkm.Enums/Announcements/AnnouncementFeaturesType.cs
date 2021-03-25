@@ -1,0 +1,33 @@
+﻿namespace Baitkm.Enums.Attachments
+{
+    public enum AnnouncementFeaturesType
+    {
+        Parking,
+        SharedGym,
+        Garden,
+        PrivateSwimmingPool,
+        PlayGround,
+        PetsAllowed,
+        Kitchen,
+        SharedSwimmingPool,
+        Security,
+        Balncony,
+        PrivateGym,
+        Elevator,
+        AC,
+        CentralAC,
+        LaundryRoom,
+        DriverRoom,
+        DiningRoom,
+        MaidRoom,
+        CoffeeShops,
+        Extension,
+        HeatingSystem,
+        LivingRoom,
+        BusShuttle,
+        KinderGarDen,
+        SuperMarket,
+        Singles,
+        Families
+    }
+}

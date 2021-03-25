@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug;Release;LocalTest;Local212</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20201002145657_Initial.cs" />
+    <Compile Include="Migrations\20201002145657_Initial.Designer.cs" />
+    <Compile Include="Migrations\20201002150435_Update_AnnouncementAttachments.cs" />
+    <Compile Include="Migrations\20201002150435_Update_AnnouncementAttachments.Designer.cs" />
+    <Compile Include="Migrations\20201002151147_Update_Configurations.cs" />
+    <Compile Include="Migrations\20201002151147_Update_Configurations.Designer.cs" />
+    <Compile Include="Migrations\20201003104454_Update_Password_Table.cs" />
+    <Compile Include="Migrations\20201003104454_Update_Password_Table.Designer.cs" />
+    <Compile Include="Migrations\20201003114905_Update_Announcement.cs" />
+    <Compile Include="Migrations\20201003114905_Update_Announcement.Designer.cs" />
+    <Compile Include="Migrations\20201005150906_Remove_Facts_Announcements_Table.cs" />
+    <Compile Include="Migrations\20201005150906_Remove_Facts_Announcements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151123_Remove_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151123_Remove_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151418_Add_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151418_Add_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151533_Update_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151533_Update_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005153000_Remove_AnnouncementIdFromFacts.cs" />
+    <Compile Include="Migrations\20201005153000_Remove_AnnouncementIdFromFacts.Designer.cs" />
+    <Compile Include="Migrations\20201005153432_Add_Facts_Table.cs" />
+    <Compile Include="Migrations\20201005153432_Add_Facts_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006061010_Update_SubAnnouncement_Table.cs" />
+    <Compile Include="Migrations\20201006061010_Update_SubAnnouncement_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006061246_Update_SubAnnouncement_Table_2.cs" />
+    <Compile Include="Migrations\20201006061246_Update_SubAnnouncement_Table_2.Designer.cs" />
+    <Compile Include="Migrations\20201006065653_Drop_GuestSubAnnouncement_Table.cs" />
+    <Compile Include="Migrations\20201006065653_Drop_GuestSubAnnouncement_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006081932_Update_Configuration_Table.cs" />
+    <Compile Include="Migrations\20201006081932_Update_Configuration_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006144020_Update_Rating_Table.cs" />
+    <Compile Include="Migrations\20201006144020_Update_Rating_Table.Designer.cs" />
+    <Compile Include="Migrations\20201014133519_Add_NewColumn_Rating_In_Announcement.cs" />
+    <Compile Include="Migrations\20201014133519_Add_NewColumn_Rating_In_Announcement.Designer.cs" />
+    <Compile Include="Migrations\20201030071618__Migration_1.cs" />
+    <Compile Include="Migrations\20201030071618__Migration_1.Designer.cs" />
+    <Compile Include="Migrations\20201030132406_Add_NewColumn_ArabianAddress.cs" />
+    <Compile Include="Migrations\20201030132406_Add_NewColumn_ArabianAddress.Designer.cs" />
+    <Compile Include="Migrations\20201113110328_RemoveTable_GuestSaveFilter__GuestSaveFilterFeatures.cs" />
+    <Compile Include="Migrations\20201113110328_RemoveTable_GuestSaveFilter__GuestSaveFilterFeatures.Designer.cs" />
+    <Compile Include="Migrations\20201113115819_Add_NewColumn_InSaveFilter.cs" />
+    <Compile Include="Migrations\20201113115819_Add_NewColumn_InSaveFilter.Designer.cs" />
+    <Compile Include="Migrations\20201113131351_Add_NewColumn_CityName_CountryName.cs" />
+    <Compile Include="Migrations\20201113131351_Add_NewColumn_CityName_CountryName.Designer.cs" />
+    <Compile Include="Migrations\20201113145811_RemoveTable_GuestFavourite.cs" />
+    <Compile Include="Migrations\20201113145811_RemoveTable_GuestFavourite.Designer.cs" />
+    <Compile Include="Migrations\20201113150137_Update_Favourite.cs" />
+    <Compile Include="Migrations\20201113150137_Update_Favourite.Designer.cs" />
+    <Compile Include="Migrations\20201124083258_Delete_Guest_and_User_Settings_Merged.cs" />
+    <Compile Include="Migrations\20201124083258_Delete_Guest_and_User_Settings_Merged.Designer.cs" />
+    <Compile Include="Migrations\20201130150517_Update_PersonSettings_DeleteBehavior.cs" />
+    <Compile Include="Migrations\20201130150517_Update_PersonSettings_DeleteBehavior.Designer.cs" />
+    <Compile Include="Migrations\20201216105503_Add_CascadeDelete_in_SomeTables.cs" />
+    <Compile Include="Migrations\20201216105503_Add_CascadeDelete_in_SomeTables.Designer.cs" />
+    <Compile Include="Migrations\BaitkmDbContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="Twilio" Version="5.30.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Baitkm.DTO\Baitkm.DTO.csproj" />
+    <ProjectReference Include="..\Baitkm.Entities\Baitkm.Entities.csproj" />
+    <ProjectReference Include="..\Baitkm.Infrastructure\Baitkm.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
